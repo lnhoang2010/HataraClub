@@ -11,12 +11,12 @@ export default class Services extends BaseView{
   render(){
     return(
       <View style = {styles.container}>
-        <TouchableOpacity 
+        {/* <TouchableOpacity 
           onPress = {()=> this.goTo("Profile")}
           style = {styles.touchable}
         >
           <Text>Profile</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
     )
   }

@@ -9,8 +9,8 @@ export default {
   },
   Profile: {
     screen: Profile,
-    navigationOptions:{
-      headerTitle: "Profile",
-    }
+    // navigationOptions:{
+    //   headerTitle: "Profile",
+    // }
   },
 }

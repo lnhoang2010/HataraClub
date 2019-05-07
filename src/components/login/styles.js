@@ -30,15 +30,17 @@ export const viewTextInput =  StyleSheet.create({
 export const buttonLogin = StyleSheet.create({
   container: {
     height: 60,
-    marginLeft: 10,
-    marginRight: 10,
+    width: 100,
+    // marginLeft: 10,
+    // marginRight: 10,
     backgroundColor: "grey",
     justifyContent: "center",
-    alignItems: "center"
+    // alignItems: "center"
   },
   text:{
     fontSize:18, 
-    fontFamily: "Montserrat-Bold"
+    fontFamily: "Montserrat-Bold",
+    alignSelf: 'center'
   }
 });
 
