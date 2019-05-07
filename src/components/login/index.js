@@ -33,9 +33,16 @@ class Login extends BaseView {
   }
 
   onLogin = () => {
-    const { username, password } = this.state;
-    const { navigation, dispatch } = this.props;
-    this.setState({ waiting: true });
+    const { navigate } = this.props.navigation;
+
+    if(ModelUser.validateLogIn(this.state.username, this.state.password, this.props.userData)){
+      navigate('Profile', { username: this.state.username})
+    } else {
+      alert("Password or username is invalid");
+    }
+    // const { username, password } = this.state;
+    // const { navigation, dispatch } = this.props;
+    // this.setState({ waiting: true });
     // dispatch(Actions.login(username, password, () => { }, () => { }));
   }
 
