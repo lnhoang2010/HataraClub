@@ -13,7 +13,6 @@ class User {
     // return await HttpHelper.post(ApiLink, {...APIconfig.login, ...data});
   }
 
-
   static validateUser = (username, userData) => {
     var varified = true;
     for(let i = 0; i < userData.length; i++){
