@@ -7,5 +7,6 @@ export default actionsType = {
   DELETE_USER: 'DELETE_USER',
   LOAD_DATA: "LOAD_DATA",
   SET_DATA: 'SET_DATA',
-  SIGN_IN: 'SIGN_IN'
+  SIGN_IN: 'SIGN_IN',
+  CHANGE_PASSWORD: 'CHANGE_PASSWORD'
 }

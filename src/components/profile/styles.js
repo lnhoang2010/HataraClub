@@ -1,15 +1,15 @@
 import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   container:{
-    backgroundColor: 'green',
+    backgroundColor: 'white',
     flex:1,
     flexDirection: 'column', 
-    // justifyContent:"center", 
+    // justifyContent:'', 
     alignItems:'center'
   },
   touchable:{
     borderWidth:1,
-    borderColor:'violet',
-    top: 200
+    borderColor:'black',
+    top: 100
   }
 })

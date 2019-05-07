@@ -26,6 +26,15 @@ export const UserReducer = (state = initState, action) => {
       
     case actionTypes.USER_SET_CURRENT_USER_DATA:
       return Object.assign({}, state, { profile: { ...data } })
+
+    case actionTypes.CHANGE_PASSWORD:
+      for(let i = 0; i < newUserData.length; i++){
+        if(newUserData[i].username == action.username){
+          newUserData[i].password = action.password
+        }
+      }
+      return Object.assign({}, state, {userData: newUserData})
+    
     default:
       return state
   }
