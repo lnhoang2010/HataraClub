@@ -9,6 +9,12 @@ class HttpHelpers {
     addCommonHeader(authorization)
     return await axios.post(url, params)
   };
+
+  static get = async (url) => {
+    const data = await fetch(url);
+    response = data.json();
+    return response;
+  }
 }
 
 export default HttpHelpers

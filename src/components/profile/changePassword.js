@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, Alert, TextInput } from 'react-native';
-// import BaseView from './../common/BaseView';
+import React from 'react';
+import { View, Text, TouchableOpacity, TextInput } from 'react-native';
+import BaseView from './../common/BaseView';
 import styles from './styles';
-import { connect } from 'react-redux';
-import Actions from '../../actions';
 
-export default class ChangePasswordForm extends Component {
+
+export default class ChangePasswordForm extends BaseView {
     constructor(props) {
         super(props)
-        // this.state = { newPassword: "", newPasswordAgain: "" }
     }
 
     render() {
         return (
             <View style={styles.container}>
-                {/* <Text>{this.props.username}</Text>  */}
                 <TextInput
                     style={{ width: 200, height: 40, top: 20, borderWidth: 1, borderColor: 'grey' }}
                     placeholder="New password"

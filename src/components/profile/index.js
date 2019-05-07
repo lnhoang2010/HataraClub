@@ -67,8 +67,7 @@ class Profile extends BaseView {
   render() {
     return (
       <View style={styles.container}>
-        {/* <Text>{this.props.username}</Text>  */}
-
+      
         {!this.state.changePassword && <View style={{ flexDirection: "row", height: 50, width: '100%', paddingTop: 50, alignItems: 'center', justifyContent: 'space-between' }}>
           <Text style={{ left: 50 }}>
             Change password
