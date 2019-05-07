@@ -3,12 +3,12 @@ import ActionTypes from '../actions/ActionTypes';
 import {call, put, takeEvery, fork} from 'redux-saga/effects';
 import User from '../models/User';
 
-function* login(action){
+function* login(username, password){
   console.log(1, "data")
   const {params, onSucces, onFail} = action;
   let data = {
-    "Email": "2@gmail.com", 
-    "Password": "c4ca4238a0b923820dcc509a6f75849b",
+    "Email": username, 
+    "Password": password,
   }
 
   try {

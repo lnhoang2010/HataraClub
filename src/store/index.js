@@ -6,7 +6,8 @@ import rootSagas from '../sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 const rootReducer = combineReducers(reducers);
-const composeEnhancer = composeWithDevTools({port:8000})
+// const composeEnhancer = composeWithDevTools({port:8000})
+const composeEnhancer = composeWithDevTools({})
 const Store = createStore(rootReducer, composeEnhancer(applyMiddleware(sagaMiddleware)));
 
 sagaMiddleware.run(rootSagas);

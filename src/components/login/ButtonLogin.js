@@ -10,7 +10,7 @@ export default (props) => {
       style={[buttonLogin.container, props.style]}
     >
       <Text style = {buttonLogin.text}>
-        {"Sign in".toUpperCase()}
+        {props.text.toUpperCase()}
       </Text>
     </View>
   </TouchableOpacity>
