@@ -15,22 +15,29 @@ class Services extends BaseView {
     this.props.dispatch(Actions.loadNews())
   }
 
+  componentDidMount() {
+    // this.props.dispatch(Actions.renderNews(this.props.news))
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <FlatList
-          data={this.props.news}
-          renderItem={({ item }) => <News
-            news = {item}
-          />}
-        />
+      <View style={[styles.container, { flexDirection: 'column', justifyContent: 'space-between' }]}>
 
         <TouchableOpacity
           onPress={() => this.onLoadNewsClicked()}
-          style={styles.touchable}
+          style={[styles.touchable, {top: 50}]}
         >
           <Text>Load news</Text>
         </TouchableOpacity>
+
+        <FlatList
+          data={this.props.news}
+          renderItem={({ item }) => <News
+            news={item}
+          />}
+        />
+
+
       </View>
     )
   }
